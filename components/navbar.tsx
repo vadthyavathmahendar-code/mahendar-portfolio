@@ -39,7 +39,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out${isScrolled ? "glass py-3" : "bg-transparent py-5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+          isScrolled 
+            ? "bg-background/70 py-3 backdrop-blur-xl border-b border-border shadow-lg shadow-primary/5" 
+            : "bg-transparent py-5"
         }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6">
